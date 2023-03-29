@@ -62,12 +62,22 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: first, 
+  * I inspected the error generated- status code 500
+  * I checked the server logs - There was a NameError which pointed to line 10 of toys_controller
+  
+  * fixed the typo error
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: first,
+* clicked the like button, and inspected the errors generated- status code 204
+* added the render json to the update method
+
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged:first,
+  * clicked the donate button
+  * inspected the status code -404 
+  * inspected the server logs - added the destroy route
